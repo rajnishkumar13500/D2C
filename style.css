@@ -7,7 +7,23 @@ body {
     font-family: "Quicksand", sans-serif;
     text-align: center;
     background-color: black;
+    color:#fda605be;
     
+}
+
+.homeContainer{
+    width :30%;
+    position: absolute;
+    top:11%;
+    left : 10%;
+    text-align: left;
+    
+    
+}
+.homeText{
+    font-size:5em;
+    color: #fda605be ;
+    back
 }
 
 /* Navbar section */
@@ -15,7 +31,7 @@ body {
 .nav {
    
     width: 100%;
-    height: 65px;
+    height: 70px;
     position: fixed;
     line-height: 65px;
     text-align: center;
@@ -33,7 +49,7 @@ body {
     font-size: 62.5%;
     font-weight: bold;
     text-decoration: none;
-    color: #c5a205;
+    color: #fda605be;
     font-size: 2.5rem;
 }
 
@@ -48,7 +64,7 @@ body {
 
 .nav div.main_list ul {
     width: 100%;
-    height: 65px;
+    height: 75px;
     display: flex;
     list-style: none;
     margin: 0;
@@ -57,7 +73,7 @@ body {
 
 .nav div.main_list ul li {
     width: auto;
-    height: 65px;
+    height: 45px;
     padding: 0;
     padding-right: 3rem;
 }
@@ -65,7 +81,7 @@ body {
 .nav div.main_list ul li a {
     text-decoration: none;
     font-weight: bold;
-    color: #c5a205;
+    color: #fda605be;
     line-height: 65px;
     font-size: 2.4rem;
 }
@@ -128,7 +144,7 @@ body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #111;
+        background-color: #111111;
         /*same background color of navbar*/
         background-position: center top;
     }
@@ -139,7 +155,7 @@ body {
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 20px;
     }
     .nav div.media_button {
@@ -365,7 +381,7 @@ body {
     display: grid;
     padding: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-auto-rows: 1fr 2fr;
+    grid-auto-rows: 1fr 1fr;
     gap: 1rem;
   }
  
@@ -373,7 +389,7 @@ body {
   #galleryHead{
     margin-top: 5rem;
     font-size: 5rem;
-    color:#c5a205 ;
+    color:#fda605be ;
   }
 
   figure {
@@ -384,9 +400,10 @@ body {
   
  
   .figureContainer {
-    background-color:rgba(30, 30, 30, 0.6);
+    background-color:rgba(255, 166, 1, 0.13);
     color: #fff;
     padding: 2rem;
+    border-radius: 3%;
   }
   
   /* Generic Styles End */
@@ -407,5 +424,129 @@ body {
     padding: 3rem;
     grid-area: figure;
     align-self: end;
+    
+
+  }
+  
+  .cardTopic{
+    color : #fda605be
+  }
+
+  form {
+    max-width: 40rem;
+    margin: 40px auto;
+    padding: 2rem;
+    border: solid 1px #ddd;
+    text-align: left;
+    border-radius: 2%;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input,
+  textarea {
+    margin-top: 0.3rem;
+    padding: 0.4em;
+    border: solid 1px #ffa600;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    color: #333;
+  }
+  
+  button {
+    border: none;
+    display: inline-block;
+    padding: 0.75rem 2.25rem;
+    border: 1px solid #fda605be;
+    border-radius: 30px;
+    background-color: #fda605be;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  /* Generic Styles End */
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "email"
+      "message"
+      "button";
+    gap: 2rem;
+  }
+  
+  #name-block {
+    grid-area: name;
+  }
+  
+  #email-block {
+    grid-area: email;
+  }
+  
+  #message-block {
+    grid-area: message;
+  }
+  
+  button {
+    grid-area: button;
+  }
+  
+  @media screen and (min-width: 530px) {
+    form {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "name message"
+        "email message"
+        "button button";
+    }
+  }
+  
+
+
+  h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    color: #fda605be;
+    margin: 0;
+  }
+  
+  i.fas {
+    color: #fda605be;
+    font-size: 3.25rem;
+    margin-top: 0.4rem;
+  }
+  .service-body {
+    margin-left: 1.5rem;
+  }
+  
+  /* Generic Styles End */
+ 
+  
+  .content {
+    text-align: left;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: 2.5rem 4rem;
+    max-width: 1100px;
+  margin: auto;
+  }
+  
+  .service {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 630px) {
+    section {
+      grid-template-rows: repeat(6, 1fr);
+    }
   }
   

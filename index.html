@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D2C</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
+    
 </head>
 <body>
     <nav class="nav">
@@ -15,9 +17,11 @@
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="#content1">Shop</a></li>
-                    <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#content1">Shop</a></li>
+                    
+                    
                 </ul>
             </div>
             <span class="navTrigger">
@@ -29,54 +33,155 @@
     </nav>
 
     <section class="home">
-    <div>
-       
-    </div>
+
+        <div class ="homeContainer">
+            <h1 class = "homeText">Creative Mind Healthy Mind</h1>
+         </div>
+    
+    
     </section>
+    
     <br>
-<span id = "content1"></span>
+    <span id = "content1"></span>
     <h1 id = "galleryHead">Gallery</h1>
     
     <section class ="gallery">
         <figure class ="figureContainer">
             
             <img class = "galleryImage" src="./images/craft1.jpg" alt="">
-            <h3>Head</h3>
+            <h3 class = "cardTopic" >Head</h3>
             <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
             
         </figure>
         <figure class ="figureContainer">
             
             <img class = "galleryImage" src="./images/bgImage.jpg" alt="">
-            <h3>Head</h3>
+            <h3 class = "cardTopic" >Head</h3>
             <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
             
         </figure>
         <figure class ="figureContainer">
             
             <img class = "galleryImage" src="./images/craft1.jpg" alt="">
-            <h3>Head</h3>
+            <h3 class = "cardTopic" >Head</h3>
             <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
             
         </figure>
         <figure class ="figureContainer">
             
             <img class = "galleryImage" src="./images/craft1.jpg" alt="">
-            <h3>Head</h3>
+            <h3 class = "cardTopic" >Head</h3>
             <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
             
         </figure>
         <figure class ="figureContainer">
             
             <img class = "galleryImage" src="./images/craft1.jpg" alt="">
-            <h3>Head</h3>
+            <h3 class = "cardTopic" >Head</h3>
+            <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
+            
+        </figure>
+        <figure class ="figureContainer">
+            
+            <img class = "galleryImage" src="./images/craft1.jpg" alt="">
+            <h3 class = "cardTopic" >Head</h3>
+            <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
+            
+        </figure>
+        <figure class ="figureContainer">
+            
+            <img class = "galleryImage" src="./images/craft1.jpg" alt="">
+            <h3 class = "cardTopic" >Head</h3>
+            <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
+            
+        </figure>
+        <figure class ="figureContainer">
+            
+            <img class = "galleryImage" src="./images/craft1.jpg" alt="">
+            <h3 class = "cardTopic" >Head</h3>
             <figcaption class ="figurecaption">This is a long caption flowing into two lines or more.</figcaption>
             
         </figure>
         
       </section>
-    
 
+
+
+      <section class="content">
+        <div class="service">
+          <i class="fas fa-rocket"></i>
+          <div class="service-body">
+            <h5>Business strategy</h5>
+            <p>Based on my experience working with fast growing startups I can offer ideas for your business strategy</p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fas fa-bullhorn"></i>
+          <div class="service-body">
+            <h5>Marketing planning</h5>
+            <p>While trying to build my personal brand and sell my copywriting services I've learned a few marketing tricks</p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fas fa-font"></i>
+          <div class="service-body">
+            <h5>Copywriting services</h5>
+            <p>I can create marketing copy, sales literature even blog posts so don't hesitate to get in touch for a quote</p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fas fa-keyboard"></i>
+          <div class="service-body">
+            <h5>Tech writing services</h5>
+            <p>You've built a software product and now you need to create your documentation? I am here to help with that</p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fas fa-photo-video"></i>
+          <div class="service-body">
+            <h5>Teaching videos</h5>
+            <p>The easiest way to help someone learn how to use your product is with video tutorials. I can create them for you</p>
+          </div>
+        </div>
+        <div class="service">
+          <i class="fas fa-users"></i>
+          <div class="service-body">
+            <h5>Conference speaking</h5>
+            <p>I can speak at your conference about writing, teaching and how to create a successful business based on skills</p>
+          </div>
+        </div>
+      </section>
+
+      <section class ="contactUS">
+
+        <h1 class = "homeText">Contact Us</h1>
+
+        <form>
+            <div id="name-block">
+              <label>
+                Full Name
+              </label>
+              <input type="text" name="name" placeholder="Full Name" />
+            </div>
+            <div id="email-block">
+              <label>
+                Email Address
+              </label>
+              <input type="email" name="email" placeholder="Email Address" />
+            </div>
+            <div id="message-block">
+              <label>
+                Message
+              </label>
+              <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+            </div>
+            <button type="submit">Send a Message</button>
+          </form>
+
+      </section>
+    
+      
+      
    
 
 
