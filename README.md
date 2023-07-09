@@ -6,7 +6,8 @@
 About the website : 
 CraftConnect is  the ultimate destination where creativity thrives and finds its marketplace. We are passionate about connecting talented artisans, craftsmen, and vendors with discerning customers who appreciate the beauty of handmade products. At CraftConnect, we believe in the power of human creativity and the value of supporting independent makers.
 
-This website uses two ways to sell Products 
+This website uses two ways to sell Products of Different crafts from all over India.
+
   1. Buy directly
   2. Enter your Bid (for exclusive products)
 
